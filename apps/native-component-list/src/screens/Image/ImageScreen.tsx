@@ -25,6 +25,13 @@ export const ImageScreens = [
       return optionalRequire(() => require('./ImageFormatsScreen'));
     },
   },
+  {
+    name: 'Events',
+    route: 'image/events',
+    getComponent() {
+      return optionalRequire(() => require('./ImageEventsScreen'));
+    },
+  },
 ];
 
 export default function ImageScreen() {
